@@ -15,7 +15,7 @@ class Weather extends Component {
             dates: [],
             selectedDate: null
         };
-        this.url = "http://api.openweathermap.org/data/2.5/forecast/daily?zip=";
+        this.url = "https://api.openweathermap.org/data/2.5/forecast/daily?zip=";
         this.apikey = "&units=imperial&appid=4319ff27021579d6c2adf5fc9c83b5eb";
 
         this.onFormSubmit = this.onFormSubmit.bind(this);
