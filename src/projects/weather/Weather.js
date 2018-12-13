@@ -44,7 +44,7 @@ class Weather extends Component {
         let day = (this.state.selectedDate != null) ? <CurrentDay day={this.state.selectedDate} city={this.state.city} /> : "";
         return (
             <Paper>
-                <div className="App">
+                <div className="weatherbody">
                     This is my weather app. we'll use {this.url} for getting weather data.
        <ZipForm onSubmit={this.onFormSubmit} />
                     <WeatherList days={this.state.dates} city={this.state.city.name} onDayClick={this.onDayClick} />
