@@ -1,18 +1,24 @@
 import React, { Component } from 'react'
-import { Paper, Avatar, Typography } from '@material-ui/core';
-import Daniel from './Daniel.jpg';
+import { Paper, Typography } from '@material-ui/core';
 
 class About extends Component {
     render() {
         return (
             <Paper>
-                <Avatar src = {Daniel} style={{ width: 180, height: 180, margin: "auto", justifyContent:"center"}}/>
-                <Typography variant="h5" component="h3">
-                    Hi, I'm Daniel.
+                <Typography variant="h5" gutterBottom>
+                    Programming is the latest meal in my endless hunger of science, technology, and wonder.
                 </Typography>
-                <Typography component="p">
-          I can't wait to tell you all about myself. Stay Tuned!
-        </Typography>
+                <Typography variant="h6" align = "left" gutterBottom>
+                    As a child I first snacked on Astronomy by learning the solar system, fathoming the enormity of the Sun,
+                    and terrifying myself by wondering, what's outside of the Universe? 
+                </Typography>
+                <Typography variant="h6" align = "left" gutterBottom>
+                As a teenager I was nourished by the vast and mystifying realm of dreams and unconscious. I read Carl Jung, experienced Sleep Paralysis,
+                discovered Richard Linklater's film Waking life, and tested the limits of my mind through lucid dreaming. 
+                </Typography>
+                <Typography variant="h6" align = "left">
+                In college I served myself a helping of psychology and neuroscience, I wanted to understand how delicate and powerful the human mind is.  
+                </Typography>
             </Paper>
         );
     }

@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { AppBar, Toolbar, Typography, Tabs, Tab } from '@material-ui/core';
 import './NavBar.css';
+import Intro from './Intro';
 import About from './About';
 import TicTac from '../projects/TicTac';
 import Weather from '../projects/weather/Weather';
@@ -47,7 +48,7 @@ class NavBar extends React.Component {
 
                     </Toolbar>
                 </AppBar>
-                {value === 0 && <About/>}
+                {value === 0 && <TabContainer><Intro/><About/></TabContainer>}
                 {value === 1 && <TabContainer><div class="projectHeader">Tic Tac Toe!</div><TicTac/><div class="projectHeader">Weather!</div><Weather/></TabContainer>}
                 {value === 2 && <TabContainer>Contact</TabContainer>}
             </div>
