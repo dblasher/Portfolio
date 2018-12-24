@@ -12,7 +12,7 @@ class Intro extends Component {
                 </Typography>
                 <Typography variant="h6" gutterBottom>
           Native Oregonian, Lucid Dreamer, and Web Developer
-                 </Typography>
+                 </Typography>  
             </Paper>
         );
     }
