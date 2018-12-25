@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Paper } from '@material-ui/core';
+import { Paper, Button } from '@material-ui/core';
 import './TicTac.css';
 
 class TicTac extends Component {
@@ -22,6 +22,7 @@ class TicTac extends Component {
             [2, 4, 6],
         ];
         this.handleClick = this.handleClick.bind(this);
+        this.reset = this.reset.bind(this);
 
     } //end of constructor
 
@@ -67,6 +68,14 @@ class TicTac extends Component {
         //you don't need quotations above? what variable type is output if not a string?
         return output;
     }
+    reset(){
+        this.setState({
+            squares: Array(9).fill(null),
+            xIsNext: true,
+            winner: null,
+            winningLine: []
+        }); 
+    }
 
     render() {
         let status;
@@ -78,8 +87,10 @@ class TicTac extends Component {
 
         const output =
             <Paper>
+                
                 <div style = {{display: "inline-block"}}>
                     <div className="status">{status}</div>
+                    <Button variant="contained" color="secondary" onClick={this.reset}>Reset</Button>
                     <div className="row">
                         {this.renderSquare(0)}{this.renderSquare(1)}{this.renderSquare(2)}
                     </div>

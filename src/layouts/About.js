@@ -8,7 +8,7 @@ class About extends Component {
                 <Typography variant="h5" gutterBottom>
                     Programming is the latest meal in my endless hunger of science, technology, and wonder.
                 </Typography>
-                <Typography variant="h6" align = "left" gutterBottom>
+                <Typography variant="h6" align = "left" color="error" gutterBottom>
                     As a child I first snacked on Astronomy by learning the solar system, fathoming the enormity of the Sun,
                     and terrifying myself by wondering, what's outside of the Universe? 
                 </Typography>

@@ -37,7 +37,7 @@ class NavBar extends React.Component {
             <div style={{ flexGrow: 2 }}>
                 <AppBar position="static" color = "secondary">
                     <Toolbar>
-                        <Typography variant="title" color="inherit">
+                        <Typography variant="title" color="textPrimary">
                             Daniel Blasher
                 </Typography>
                         <Tabs value={value} onChange={this.handleChange}>
@@ -49,7 +49,7 @@ class NavBar extends React.Component {
                     </Toolbar>
                 </AppBar>
                 {value === 0 && <TabContainer><Intro/><About/></TabContainer>}
-                {value === 1 && <TabContainer><div class="projectHeader">Tic Tac Toe!</div><TicTac/><div class="projectHeader">Weather!</div><Weather/></TabContainer>}
+                {value === 1 && <TabContainer><div className="projectHeader">Tic Tac Toe!</div><TicTac/><div className="projectHeader">Weather!</div><Weather/></TabContainer>}
                 {value === 2 && <TabContainer>Contact</TabContainer>}
             </div>
         )
