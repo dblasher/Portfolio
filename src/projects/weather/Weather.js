@@ -45,8 +45,7 @@ class Weather extends Component {
         return (
             <Paper>
                 <div className="weatherbody">
-                <h1> 7 Day Forecast</h1>
-                    This is my weather app. we'll use {this.url} for getting weather data.
+                <h1> 7 Day Forecast using Open Weather Map Api</h1>
        <ZipForm onSubmit={this.onFormSubmit} />
                     <WeatherList days={this.state.dates} city={this.state.city.name} onDayClick={this.onDayClick} />
                     {day}

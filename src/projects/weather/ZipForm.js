@@ -32,7 +32,7 @@ class ZipForm extends Component {
                         <input onInput = {this.InputUpdated} className="form-control" type=" input" id="zipcode"
                          name="zipcode" value={this.state.zipcode} required
                         />
-                        <button type="submit" className="btn btn-success"> Get the forcast!</button>
+                        <button type="submit" className="btn btn-success"> Get the forecast!</button>
                     </div>
                 </form>
             </div>)

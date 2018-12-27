@@ -1,24 +1,20 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { AppBar, Toolbar, Typography, Button,  Tabs, Tab } from '@material-ui/core';
+import { AppBar, Toolbar, Typography, Button,  Tabs, Tab, withStyles } from '@material-ui/core';
 import { NavBar, Footer } from './layouts';
 import './App.css';
 import Intro from './layouts/Intro';
 import About from './layouts/About';
 import Projects from './projects';
 
-const styles = {
+const styles = theme => ({
   root: {
-    flexGrow: 1,
+    padding: theme.spacing.unit,
+    [theme.breakpoints.down('xs')]: {
+      display: "grid",
+    },
   },
-  flex: {
-    flex: 1,
-  },
-  menuButton: {
-    marginLeft: -12,
-    marginRight: 20,
-  },
-};
+});
 
 function TabContainer(props) {
   return (
@@ -42,15 +38,15 @@ handleChange = (event, value) => {
 };
   //---begin render---
   render() {
-
+    const { classes } = this.props;
     const { value } = this.state;
     return (
       <div className="App">
 
-        <div style={{ flexGrow: 2 }}>
-          <AppBar position="static" color="secondary">
-            <Toolbar>
-              <Typography variant="title" color="textPrimary">
+        <div style={{ flexGrow: 2}}>
+          <AppBar position="static" color="secondary" style={{display:"grid"}}>
+            <Toolbar className={classes.root}>
+              <Typography variant="title" color="inherit">
                 Daniel Blasher
                 </Typography>
               <Tabs value={value} onChange={this.handleChange}>
@@ -72,4 +68,4 @@ handleChange = (event, value) => {
 
 }
 
-export default App;
+export default withStyles(styles)(App);
