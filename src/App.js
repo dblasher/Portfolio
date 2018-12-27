@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { NavBar, Footer } from './layouts';
 import './App.css';
+import TopNav from './layouts/TopNav';
 
 class App extends Component {
 
@@ -8,6 +9,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <TopNav/>
         <NavBar />
         <Footer />
       </div>

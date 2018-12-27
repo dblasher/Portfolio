@@ -8,10 +8,10 @@ class Intro extends Component {
             <Paper>
                 <Avatar src = {Daniel} style={{ width: 180, height: 180, margin: "auto", justifyContent:"center"}}/>
                 <Typography variant="h2">
-                    Hi, I'm Daniel.
+                    Hi, I'm Daniel
                 </Typography>
                 <Typography variant="h6" gutterBottom>
-          Native Oregonian, Lucid Dreamer, and Web Developer
+          Aspiring Web Developer bringing my talents to Portland, Oregon
                  </Typography>  
             </Paper>
         );
