@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { AppBar, Toolbar, Typography, Button,  Tabs, Tab, withStyles } from '@material-ui/core';
-import { NavBar, Footer } from './layouts';
+import { Footer } from './layouts';
 import './App.css';
-import Intro from './layouts/Intro';
 import About from './layouts/About';
 import Projects from './projects';
 
@@ -56,11 +55,10 @@ handleChange = (event, value) => {
               </Tabs>
             </Toolbar>
           </AppBar>
-          {value === 0 && <TabContainer><Intro /><About /></TabContainer>}
+          {value === 0 && <TabContainer><About /></TabContainer>}
           {value === 1 && <TabContainer><Projects /></TabContainer>}
           {value === 2 && <TabContainer>Contact</TabContainer>}
         </div>
-        <Footer />
       </div>
     );
   }
