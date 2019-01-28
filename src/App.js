@@ -43,12 +43,12 @@ handleChange = (event, value) => {
       <div className="App">
 
         <div style={{ flexGrow: 2}}>
-          <AppBar position="static" color="secondary" style={{display:"grid"}}>
+          <AppBar position="static" style={{display:"grid", background:'#4caf50'}}>
             <Toolbar className={classes.root}>
               <Typography variant="title" color="inherit">
                 Daniel Blasher
                 </Typography>
-              <Tabs value={value} onChange={this.handleChange}>
+              <Tabs value={value} onChange={this.handleChange} indicatorColor='white'>
                 <Tab label="About" />
                 <Tab label="Projects" />
                 <Tab label="Contact" />
