@@ -18,14 +18,6 @@ class Intro extends Component {
                  </Typography>
                 </Grid>
                 <Paper style={{ padding: 24 }}>
-                <Typography variant="h5" gutterBottom>
-                        I enjoy working with teams building customer facing web applications using modern Javascript, C#, and SQL. 
-                </Typography>
-                    <Typography variant="h6" gutterBottom>
-                        Bla bla bla
-                </Typography>
-                </Paper>
-                <Paper style={{ padding: 24 }}>
                     <Typography variant="h5" gutterBottom>
                         Programming is the latest meal in my endless hunger of science, technology, and wonder.
                 </Typography>
@@ -34,7 +26,7 @@ class Intro extends Component {
                         and terrifying myself by wondering, what's outside of the Universe?
                 </Typography>
                     <Typography variant="h6" gutterBottom>
-                        As a teenager I was nourished by the vast and mystifying realm of dreams and unconscious. I read Carl Jung, experienced Sleep Paralysis,
+                        In my teenage years I was nourished by the vast and mystifying realm of dreams and unconscious. I read Carl Jung, experienced Sleep Paralysis,
                         discovered Richard Linklater's film Waking life, and tested the limits of my mind through lucid dreaming.
                 </Typography>
                     <Typography variant="h6">

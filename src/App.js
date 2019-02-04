@@ -57,7 +57,7 @@ handleChange = (event, value) => {
           </AppBar>
           {value === 0 && <TabContainer><About /></TabContainer>}
           {value === 1 && <TabContainer><Projects /></TabContainer>}
-          {value === 2 && <TabContainer>Contact</TabContainer>}
+          {value === 2 && <TabContainer>Form coming soon!</TabContainer>}
         </div>
       </div>
     );
