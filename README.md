@@ -2,4 +2,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 My Portfolio page is hosted through Github Pages [here](https://dblasher.github.io/portfolio/)
 
-As of 10.12.18 it under construction.
+As of 2.15.19 it under construction.
+
+Some content I'd like to add:
+
+- creating a graphic from a dream image: Experimenting with graphic design and dream analysis
+- Minor Bliss: Why is the minor key so pleasant to me?
+- Thano's Victory: Ending on a positive note
